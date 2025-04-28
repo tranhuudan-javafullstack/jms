@@ -12,7 +12,7 @@ import com.bharath.jms.hm.eligibilitycheck.listeners.EligibilityCheckListener;
 
 public class EligibilityCheckerApp {
 
-	public static void main(String[] args) throws NamingException, InterruptedException {
+	public static void main(String[] args) throws NamingException {
 		InitialContext initialContext = new InitialContext();
 		Queue requestQueue = (Queue) initialContext.lookup("queue/requestQueue");
 

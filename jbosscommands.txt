@@ -1,8 +1,0 @@
- ./standalone.sh -c standalone-full.xml
-
-./jboss-cli.sh 
-
-jms-queue add --queue-address=myQueue --entries=queue/myQueue,java:jboss/exported/jms/queue/myQueue
-
-/subsystem=messaging-activemq/server=default/jms-queue=myQueue:read-resource
-	

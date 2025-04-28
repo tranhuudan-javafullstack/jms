@@ -11,7 +11,7 @@ import javax.naming.NamingException;
 
 public class MessageProducer {
 
-    public static void main(String[] args) throws NamingException, JMSException {
+    public static void main(String[] args) throws NamingException {
 
         InitialContext initialContext = new InitialContext();
         Queue requestQueue = (Queue) initialContext.lookup("queue/requestQueue");
